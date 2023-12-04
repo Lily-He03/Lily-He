@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
+      ul {
+        list-style-type: none;
+      }
       table, th, td {
         border: 2px solid white;
         border-collapse: collapse;
@@ -65,10 +68,12 @@
         <h3 style="color:#CC5F5A"><b>Welcome<br>To My Channel!</b></h3>
       </div>
       <div class="w3-bar-block"> 
-        <a href="#aboutme" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About Me</a> 
-        <a href="#myhobbies" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">My Hobbies</a> 
-        <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Portfolio</a> 
-        <a href="#contactme" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a> 
+        <ul>
+          <li><a href="#aboutme" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About Me</a></li>
+          <li><a href="#myhobbies" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">My Hobbies</a></li>
+          <li><a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Portfolio</a></li>
+          <li><a href="#contactme" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a></li>
+        </ul>
       </div>
     </nav>
 
@@ -81,197 +86,199 @@
 <!-- Overlay effect when opening sidebar on small screens -->
 <!--<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close the menu on small screen" id="smallNavigation"></div>-->
 
-<!-- Main Page -->
-<div class="w3-main" style="margin-left:340px;margin-right:40px">
+    <!-- Main Page -->
+    <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
-  <!-- About Me -->
-  
-  <div class="w3-container" style="margin-top:80px" id="aboutme">
-    
-    <h1 class="w3-jumbo"><b>Liyuan He</b></h1>
-    <h1 class="w3-xxxlarge w3-text-red"><b>GBDA - University of Waterloo</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <div class="w3-container w3-cell">
-      <img src="me1.JPG" alt="me1" style="width:100%">
-    </div>
-    <div class="w3-container w3-cell">
-      <img src="me2.JPG" alt="me1" style="width:100%">
-    </div>
-    <div class="w3-container" style="background-color:#DDBCB7;margin:10px">
-      <p>Hi I'm Liyuan He (She/her). You can call me Lily. I am a GBDA student from University of Waterloo.
-      I love photography and traveling. If you like these things too, I think we would be good friends.
-      </p>
-    </div>
-  </div>
-  
+      <!-- About Me -->
+
+      <div class="w3-container" style="margin-top:80px" id="aboutme">
+
+        <h1 class="w3-jumbo"><b>Liyuan He</b></h1>
+        <h1 class="w3-xxxlarge w3-text-red"><b>GBDA - University of Waterloo</b></h1>
+        <hr style="width:50px;border:5px solid red" class="w3-round">
+        <div class="w3-container w3-cell">
+          <img src="me1.JPG" alt="me1" style="width:100%">
+        </div>
+        <div class="w3-container w3-cell">
+          <img src="me2.JPG" alt="me1" style="width:100%">
+        </div>
+        <div class="w3-container" style="background-color:#DDBCB7;margin:10px">
+          <p>Hi I'm Liyuan He (She/her). You can call me Lily. I am a GBDA student from University of Waterloo.
+          I love photography and traveling. If you like these things too, I think we would be good friends.
+          </p>
+        </div>
+      </div>
 
 
-  <!-- My Hobbies -->
-  <div class="w3-container" id="myhobbies" style="margin-top:50px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>My Hobbies</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>I'm excited to share my biggest passion - Traveling - with you here!</p>
-    <p>Traveling brings me unlimited joy. 
-      I love to photograph beautiful vibes while traveling, here are some of my travel photos.</p>
-    
-    <!-- My slide show -->
+
+      <!-- My Hobbies -->
+      <div class="w3-container" id="myhobbies" style="margin-top:50px">
+        <h1 class="w3-xxxlarge w3-text-red"><b>My Hobbies</b></h1>
+        <hr style="width:50px;border:5px solid red" class="w3-round">
+        <p>I'm excited to share my biggest passion - Traveling - with you here!</p>
+        <p>Traveling brings me unlimited joy. 
+          I love to photograph beautiful vibes while traveling, here are some of my travel photos.</p>
+
+      <!-- My slide show -->
         <div class="w3-container">
-	<h2>My photography</h2>
-  <p>（Shot With iPhone）</p>
-</div>
-    <div class="w3-row-padding">
-      <div class="w3-half">
-        <img src="travel1.JPG" alt="travel1" style="width:100%">
-        <img src="travel3.JPG" alt="travel3" style="width:100%">
+          <h2>My photography</h2>
+          <p>（Shot With iPhone）</p>
+        </div>
+        <div class="w3-row-padding">
+          <div class="w3-half">
+            <img src="travel1.JPG" alt="travel1" style="width:100%">
+            <img src="travel3.JPG" alt="travel3" style="width:100%">
+          </div>
+          <div class="w3-half">
+            <img src="travel2.JPG" alt="travel2" style="width:100%">
+            <img src="travel4.JPG" alt="travel4" style="width:100%">
+          </div>
+        </div>
+
+        <div class="w3-container">
+          <h2>Music festival</h2>
+          <p>I love going to music festivals in the summer and feeling the heat from the mind! These were the photographs I took when I was in the crowed.</p>
+        </div>
+
+        <div class="w3-content" style="max-width:1200px">
+          <img class="mySlides" src="musicfestival1.JPG" alt="musicfestival1" style="width:100%;display:none;">
+          <img class="mySlides" src="musicfestival2.jpg" alt="musicfestival2" style="width:100%">
+          <img class="mySlides" src="musicfestival3.jpg" alt="musicfestival3" style="width:100%;display:none">
+
+
+        <div class="w3-row-padding w3-section">
+          <div class="w3-col s4">
+            <img class="demo w3-opacity w3-hover-opacity-off" src="musicfestival1.JPG" alt="musicfestival1" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+          </div>
+          <div class="w3-col s4">
+            <img class="demo w3-opacity w3-hover-opacity-off" src="musicfestival2.jpg" alt="musicfestival2" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+          </div>
+          <div class="w3-col s4">
+            <img class="demo w3-opacity w3-hover-opacity-off" src="musicfestival3.jpg" alt="musicfestival3" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+          </div>
+        </div>
       </div>
-      <div class="w3-half">
-        <img src="travel2.JPG" alt="travel2" style="width:100%">
-        <img src="travel4.JPG" alt="travel4" style="width:100%">
+
+      <!--
+      Code copied from: https://www.w3schools.com/w3css/w3css_slideshow.asp
+      Author: w3schools.com
+      Name: Images as Indicators
+      Description: Displays a slideshow.
+      Date retrieved: Dec. 3, 2023
+      -->
+
+      <!-- Copied code starts -->
+      <script>
+        let slideIndex;
+        function currentDiv(n) {
+          showDivs(slideIndex = n);
+        }
+        function showDivs(n) {
+          let i;
+          let x = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("demo");
+          if (n > x.length) {
+            slideIndex = 1
+          }
+          if (n < 1) {
+            slideIndex = x.length
+          }
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+          }
+          x[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " w3-opacity-off";
+        }
+      </script>
+      <!-- Copied code ends -->
       </div>
-    </div>
-    
-    <div class="w3-container">
-	<h2>Music festival</h2>
-  <p>I love going to music festivals in the summer and feeling the heat from the mind! These were the photographs I took when I was in the crowed.</p>
-</div>
-
-<div class="w3-content" style="max-width:1200px">
-  <img class="mySlides" src="musicfestival1.JPG" alt="musicfestival1" style="width:100%;display:none;">
-  <img class="mySlides" src="musicfestival2.jpg" alt="musicfestival2" style="width:100%">
-  <img class="mySlides" src="musicfestival3.jpg" alt="musicfestival3" style="width:100%;display:none">
-
-
-  <div class="w3-row-padding w3-section">
-    <div class="w3-col s4">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="musicfestival1.JPG" alt="musicfestival1" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
-    </div>
-    <div class="w3-col s4">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="musicfestival2.jpg" alt="musicfestival2" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
-    </div>
-    <div class="w3-col s4">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="musicfestival3.jpg" alt="musicfestival3" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
-    </div>
-  </div>
-</div>
-    
-<!--
-Code copied from: https://www.w3schools.com/w3css/w3css_slideshow.asp
-Author: w3schools.com
-Name: Images as Indicators
-Description: Displays a slideshow.
-Date retrieved: Dec. 3, 2023
--->
-
-<!-- Copied code starts -->
-
-<script>
-    function currentDiv(n) {
-      showDivs(slideIndex = n);
-    }
-
-    function showDivs(n) {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("demo");
-      if (n > x.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = x.length}
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
-      }
-      x[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " w3-opacity-off";
-    }
-  </script>
-
-<!-- Copied code ends -->
-  
-</div>
-  
-  <!-- Portfolio -->
-  <div class="w3-container" id="portfolio" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Portfolio</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>“Calorie warning“</p>
-    <p style="background-color:rgb(255, 255, 255,0.7)">The project was created to remind people of the sugar and oil in fast food. Ice
-cream is made with a lot of sugar, and french fries and fried chicken use a lot of oil.
-Too much sugar and oil are bad for the physical body. People who don't often eat fast
-food sometimes get attracted by buy-one-get-one-free promotions and make a
-purchase. So I changed the text in the ad to remind people who saw it what they would
-actually get when they purchased the food in the ad. I used the healing brush to
-remove the ice cream on the two paper cups, used the lasso to get the "sugar cubes"
-in the picture, then used the clone tool to copy it into two "sugar cubes", and moved
-them to the original positions of the two ice creams. Then I used the healing brush to
-remove the sauce from the fried chicken platter and used the lasso tool to get the
-dripping oil and placed it on the fried chicken and fries platter. For the text part, I also
-used the healing brush to erase the original content. I used brushes to paint and cover
-the parts that couldn't be recognized by the healing brush to make the whole picture
-clearer. Then I used the text tool and brushes to create my own text. I changed the
-price to "911" emergency number. Because eating too much sugar can cause serious
-illness! (tool: photoshop)
-    </p>
-    <p><b>Here 's the original and subverted versions</b>:</p>
-  </div>
-    <!-- Work of Advertisement -->
-    <div class="w3-row-padding">
-      <div class="w3-half">
-        <img src="A3_Lily_He_original_ad.JPG" alt="A3_Lily_He_original_ad" style="width:100%">
+      <!-- Portfolio -->
+      <div class="w3-container" id="portfolio" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-red"><b>Portfolio</b></h1>
+        <hr style="width:50px;border:5px solid red" class="w3-round">
+        <p>“Calorie warning“</p>
+        <p style="background-color:rgb(255, 255, 255,0.7)">The project was created to remind people of the sugar and oil in fast food. Ice
+        cream is made with a lot of sugar, and french fries and fried chicken use a lot of oil.
+        Too much sugar and oil are bad for the physical body. People who don't often eat fast
+        food sometimes get attracted by buy-one-get-one-free promotions and make a
+        purchase. So I changed the text in the ad to remind people who saw it what they would
+        actually get when they purchased the food in the ad. I used the healing brush to
+        remove the ice cream on the two paper cups, used the lasso to get the "sugar cubes"
+        in the picture, then used the clone tool to copy it into two "sugar cubes", and moved
+        them to the original positions of the two ice creams. Then I used the healing brush to
+        remove the sauce from the fried chicken platter and used the lasso tool to get the
+        dripping oil and placed it on the fried chicken and fries platter. For the text part, I also
+        used the healing brush to erase the original content. I used brushes to paint and cover
+        the parts that couldn't be recognized by the healing brush to make the whole picture
+        clearer. Then I used the text tool and brushes to create my own text. I changed the
+        price to "911" emergency number. Because eating too much sugar can cause serious
+        illness! (tool: photoshop)
+        </p>
+        <p><b>Here 's the original and subverted versions</b>:</p>
       </div>
-      <div class="w3-half">
-        <img src="A3_Lily_He_subverted_ad.jpg" alt="A3_Lily_He_subverted_ad" style="width:100%">
+      <!-- Work of Advertisement -->
+      <div class="w3-row-padding">
+        <div class="w3-half">
+          <img src="A3_Lily_He_original_ad.JPG" alt="A3_Lily_He_original_ad" style="width:100%">
+        </div>
+        <div class="w3-half">
+          <img src="A3_Lily_He_subverted_ad.jpg" alt="A3_Lily_He_subverted_ad" style="width:100%">
+        </div>
       </div>
+
+      <!-- Contact me -->
+      <div class="w3-container" id="contactme" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-red"><b>Contact Me</b></h1>
+        <hr style="width:50px;border:5px solid red" class="w3-round">
+        <p>Here are some of the main ways in which you can reach me.</p>
+      </div>
+      <!-- My contact information -->
+      <div>
+        <table style="width:90%;margin: 0px 20px 50px 20px">
+          <tr>
+            <th>My platform</th>
+            <th style="width:65%">Address</th>
+          </tr>
+          <tr style="height:100px">
+            <td>Instagram</td>
+            <td><p><a href="https://instagram.com/lilyuannn?igshid=MTk0NTkyODZkYg%3D%3D&utm_source=qr" target="_blank">Visit my INS homepage now!</a></p></td>
+          </tr>
+          <tr style="height:70px">
+            <td>Telephone</td>
+            <td>+13658888380</td>
+          </tr>
+          <tr style="height:70px">
+            <td>Email</td>
+            <td><a href="mailto:l86he@uwaterloo.ca">Send email: l86he@uwaterloo.ca</a></td>
+          </tr>
+        </table>
+      </div>
+      <!--
+      Code copied from: https://www.w3schools.com/w3css/w3css_sidebar.asp
+      Author: w3schools.com
+      Name: navigation
+      Description: open and close the sidebar.
+      Date retrieved: Dec. 3, 2023
+      -->
+
+      <!-- Copied code starts -->
+      <script>
+        // open and close Navigation
+        function w3_open() {
+          document.getElementById("Navigation").style.display = "block";
+          <!--document.getElementById("myOverlay").style.display = "block";-->
+        }
+
+        function w3_close() {
+          document.getElementById("Navigation").style.display = "none";
+          <!--document.getElementById("myOverlay").style.display = "none";-->document.getElementById("myOverlay").style.display = "block";
+        }
+      </script>
+      <!-- Copied code ends -->
+      
     </div>
-
-
-
-  <!-- Contact me -->
-  <div class="w3-container" id="contactme" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Contact Me</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>Here are some of the main ways in which you can reach me.</p>
-  </div>
-  <!-- My contact information -->
-  <div>
-    <table style="width:90%;margin: 0px 20px 50px 20px">
-      <tr>
-        <th>My platform</th>
-        <th style="width:65%">Address</th>
-      </tr>
-      <tr style="height:100px">
-        <td>Instagram</td>
-        <td><p><a href="https://instagram.com/lilyuannn?igshid=MTk0NTkyODZkYg%3D%3D&utm_source=qr" target="_blank">Visit my INS homepage now!</a></p></td>
-      </tr>
-      <tr style="height:70px">
-        <td>Telephone</td>
-        <td>+13658888380</td>
-      </tr>
-      <tr style="height:70px">
-        <td>Email</td>
-        <td><a href="mailto:l86he@uwaterloo.ca">Send email: l86he@uwaterloo.ca</a></td>
-      </tr>
-    </table>
-  </div>
-
-        
-  </div>
-  
-</div>
-<script>
-  // Script to open and close Navigation
-  function w3_open() {
-    document.getElementById("Navigation").style.display = "block";
-    <!--document.getElementById("myOverlay").style.display = "block";-->
-  }
-
-  function w3_close() {
-    document.getElementById("Navigation").style.display = "none";
-    <!--document.getElementById("myOverlay").style.display = "none";-->document.getElementById("myOverlay").style.display = "block";
-  }
-
-</script>
-
-
 </body>
 </html>
