@@ -35,26 +35,34 @@
       body,h1,h2,h3,h4,h5 {
         font-family: Georgia, serif;
       }
-      h1,h2,h3,h4,h5{
-        font-size:px;
+      h3{
+        font-size: 24px;
+        padding: 64px 0px 64px 0px;
+      }
+      h1,h2,h4,h5{
+        font-size: 18px;
+      }
+      header{
+        padding: 16px 8px 16px 8px;
+        font-size: 24px;
       }
       body {
-        font-size: 16px;
+        font-size: 18px;
       }
       .w3-half img{
         margin-bottom: -6px;margin-top: 16px;
       }
-
+      
     </style>
 	</head>
   
 	<body style="background-color:#F9ECE4;">
 
     <!-- navigation -->
-    <nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="background-color:#F2DBD5;z-index:3;width:300px;font-weight:bold;" id="Navigation"><br>
+    <nav class="w3-sidebar w3-collapse w3-top" style="background-color:#F2DBD5;z-index:3;width:300px;font-weight:bold;" id="Navigation"><br>
       <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft w3-hover-white" style="width:100%;font-size:22px;background-color:#EBC2C0">Close Menu</a>
       <div class="w3-container">
-        <h3 class="w3-padding-64" style="color:#CC5F5A"><b>Welcome<br>To My Channel!</b></h3>
+        <h3 style="color:#CC5F5A"><b>Welcome<br>To My Channel!</b></h3>
       </div>
       <div class="w3-bar-block"> 
         <a href="#aboutme" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About Me</a> 
@@ -65,18 +73,18 @@
     </nav>
 
     <!-- menu on small screens -->
-    <header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding" style="background-color:#EBC2C0;">
-      <a href="javascript:void(0)" class="w3-button w3-margin-right w3-hover-white" style="background-color:#EBC2C0;"onclick="w3_open()">☰</a>
+    <header class="w3-container w3-top w3-hide-large" style="background-color:#EBC2C0;">
+      <a href="javascript:void(0)" class="w3-button w3-margin-right w3-hover-white" style="background-color:#EBC2C0" onclick="w3_open()">☰</a>
       <span style="color:#CC5F5A">Welcome to my ChanneL :)</span>
     </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
 <!--<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close the menu on small screen" id="smallNavigation"></div>-->
 
-<!-- !PAGE CONTENT! -->
+<!-- Main Page -->
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
-  <!-- Header -->
+  <!-- About Me -->
   
   <div class="w3-container" style="margin-top:80px" id="aboutme">
     
@@ -187,7 +195,7 @@ Date retrieved: Dec. 3, 2023
     <h1 class="w3-xxxlarge w3-text-red"><b>Portfolio</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
     <p>“Calorie warning“</p>
-    <p>The project was created to remind people of the sugar and oil in fast food. Ice
+    <p style="background-color:rgb(255, 255, 255,0.7)">The project was created to remind people of the sugar and oil in fast food. Ice
 cream is made with a lot of sugar, and french fries and fried chicken use a lot of oil.
 Too much sugar and oil are bad for the physical body. People who don't often eat fast
 food sometimes get attracted by buy-one-get-one-free promotions and make a
