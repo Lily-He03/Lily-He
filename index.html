@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <style>
       table, th, td {
         border: 2px solid white;
@@ -15,6 +14,7 @@
         background-color: #F4C7B0;
         padding: 15px;
       }
+      
       /* unvisited link */
       a:link {
         color: #F77E66;
@@ -31,20 +31,30 @@
       a:active {
         color: purple;
       }
-      body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
-      body {font-size: 16px;}
-      .w3-half img{margin-bottom: -6px;margin-top: 16px;opacity: 0.8;cursor: pointer}
-      .w3-half img:hover{opacity: 1}
+      
+      body,h1,h2,h3,h4,h5 {
+        font-family: Georgia, serif;
+      }
+      h1,h2,h3,h4,h5{
+        font-size:px;
+      }
+      body {
+        font-size: 16px;
+      }
+      .w3-half img{
+        margin-bottom: -6px;margin-top: 16px;
+      }
+
     </style>
 	</head>
   
 	<body style="background-color:#F9ECE4;">
 
     <!-- navigation -->
-    <nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="background-color:#F4BAAF;z-index:3;width:300px;font-weight:bold;" id="Navigation"><br>
-      <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft w3-hover-white" style="width:100%;font-size:22px;background-color:#EED1CC">Close Menu</a>
+    <nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="background-color:#F2DBD5;z-index:3;width:300px;font-weight:bold;" id="Navigation"><br>
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft w3-hover-white" style="width:100%;font-size:22px;background-color:#EBC2C0">Close Menu</a>
       <div class="w3-container">
-        <h3 class="w3-padding-64"><b>Welcome<br>To My Channel!</b></h3>
+        <h3 class="w3-padding-64" style="color:#CC5F5A"><b>Welcome<br>To My Channel!</b></h3>
       </div>
       <div class="w3-bar-block"> 
         <a href="#aboutme" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About Me</a> 
@@ -55,9 +65,9 @@
     </nav>
 
     <!-- menu on small screens -->
-    <header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding" style="background-color:#D3BBB7;">
-      <a href="javascript:void(0)" class="w3-button w3-margin-right w3-hover-white" style="background-color:#D3BBB7;"onclick="w3_open()">☰</a>
-      <span>Welcome to my ChanneL :)</span>
+    <header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding" style="background-color:#EBC2C0;">
+      <a href="javascript:void(0)" class="w3-button w3-margin-right w3-hover-white" style="background-color:#EBC2C0;"onclick="w3_open()">☰</a>
+      <span style="color:#CC5F5A">Welcome to my ChanneL :)</span>
     </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -99,7 +109,7 @@
     <!-- My slide show -->
         <div class="w3-container">
 	<h2>My photography</h2>
-  <p>Photoed By iPhone</p>
+  <p>（Shot With iPhone）</p>
 </div>
     <div class="w3-row-padding">
       <div class="w3-half">
