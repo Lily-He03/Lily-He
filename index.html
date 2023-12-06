@@ -93,7 +93,8 @@
       }
       
       .w3-half img{
-        margin-bottom: -6px;margin-top: 16px;
+        margin-bottom: -6px;
+        margin-top: 16px;
       }
       
       * {
@@ -111,7 +112,7 @@
   
 	<body style="background-color:#F9ECE4;">
 
-    <!-- navigation -->
+    <!-- navigation bar -->
     <nav class="w3-sidebar w3-collapse w3-top" style="background-color:#F2DBD5;z-index:3;width:300px;font-weight:bold;" id="Navigation"><br>
       <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft w3-hover-white" style="width:100%;font-size:22px;background-color:#EBC2C0">Close Menu</a>
       <div class="w3-container">
@@ -127,20 +128,16 @@
       </div>
     </nav>
 
-    <!-- menu on small screens -->
+    <!-- navigation bar on mobile screen -->
     <header class="w3-container w3-top w3-hide-large" style="background-color:#EBC2C0;">
       <a href="javascript:void(0)" class="w3-button w3-margin-right w3-hover-white" style="background-color:#EBC2C0" onclick="w3_open()">☰</a>
       <span style="color:#CC5F5A">Welcome to my ChanneL :)</span>
     </header>
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<!--<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close the menu on small screen" id="smallNavigation"></div>-->
-
     <!-- Main Page -->
     <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
       <!-- About Me -->
-
       <div class="w3-container" style="margin-top:80px" id="aboutme">
 
         <h1>Lily's Channel</h1>
@@ -159,17 +156,16 @@
         </div>
       </div>
 
-
-
       <!-- My Hobbies -->
       <div class="w3-container" id="myhobbies" style="margin-top:50px">
         <h4><b>My Hobbies</b></h4>
         <hr>
         <p>I'm excited to share my biggest passion - Traveling - with you here!</p>
         <p>Traveling brings me unlimited joy. 
-          I love to photograph beautiful vibes while traveling, here are some of my travel photos.</p>
-
-      <!-- My slide show -->
+          I love to photograph beautiful vibes while traveling, here are some of my travel photos.
+        </p>
+        
+        <!-- My slide show -->
         <div class="w3-container">
           <h5>My Travel Vibes</h5>
           <p>（Shot With iPhone）</p>
@@ -196,55 +192,57 @@
           <img class="mySlides" src="musicfestival3.jpg" alt="musicfestival3" style="width:100%;display:none">
 
 
-        <div class="w3-row-padding w3-section">
-          <div class="w3-col s4">
-            <img class="demo w3-opacity w3-hover-opacity-off" src="musicfestival1.JPG" alt="musicfestival1" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
-          </div>
-          <div class="w3-col s4">
-            <img class="demo w3-opacity w3-hover-opacity-off" src="musicfestival2.jpg" alt="musicfestival2" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
-          </div>
-          <div class="w3-col s4">
-            <img class="demo w3-opacity w3-hover-opacity-off" src="musicfestival3.jpg" alt="musicfestival3" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+          <div class="w3-row-padding w3-section">
+            <div class="w3-col s4">
+              <img class="w3-opacity w3-hover-opacity-off" src="musicfestival1.JPG" alt="musicfestival1" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+            </div>
+            <div class="w3-col s4">
+              <img class="w3-opacity w3-hover-opacity-off" src="musicfestival2.jpg" alt="musicfestival2" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+            </div>
+            <div class="w3-col s4">
+              <img class="w3-opacity w3-hover-opacity-off" src="musicfestival3.jpg" alt="musicfestival3" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+            </div>
           </div>
         </div>
-      </div>
+        <!--
+        Code copied from: https://www.w3schools.com/w3css/w3css_slideshow.asp
+        Author: w3schools.com
+        Name: Images as Indicators
+        Description: Displays a slideshow.
+        Date retrieved: Dec. 3, 2023
+        -->
 
-      <!--
-      Code copied from: https://www.w3schools.com/w3css/w3css_slideshow.asp
-      Author: w3schools.com
-      Name: Images as Indicators
-      Description: Displays a slideshow.
-      Date retrieved: Dec. 3, 2023
-      -->
-
-      <!-- Copied code starts -->
-      <script>
-        let slideIndex;
-        function currentDiv(n) {
-          showDivs(slideIndex = n);
-        }
-        function showDivs(n) {
-          let i;
-          let x = document.getElementsByClassName("mySlides");
-          let dots = document.getElementsByClassName("demo");
-          if (n > x.length) {
-            slideIndex = 1
+        <!-- Copied code starts -->
+        <script>
+          let slideIndex;
+          function currentDiv(n) {
+            showDivs(slideIndex = n);
           }
-          if (n < 1) {
-            slideIndex = x.length
+          function showDivs(n) {
+            let i;
+            let x = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("demo");
+            if (n > x.length) {
+              slideIndex = 1
+            }
+            if (n < 1) {
+              slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+            }
+            x[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " w3-opacity-off";
           }
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-          }
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
-          }
-          x[slideIndex-1].style.display = "block";
-          dots[slideIndex-1].className += " w3-opacity-off";
-        }
-      </script>
-      <!-- Copied code ends -->
+        </script>
+        <!-- Copied code ends -->
       </div>
+      
+      
+      
       <!-- Portfolio -->
       <div class="w3-container" id="portfolio" style="margin-top:75px">
         <h4><b>My Portfolio</b></h4>
@@ -270,7 +268,7 @@
           </p>
         </div>
         <p><strong>Here 's the original and subverted versions :</strong></p>
-        <!-- Pictures of work -->
+        <!-- Calorie Warning -->
         <div class="w3-row-padding">
           <div class="w3-half">
             <img src="A3_Lily_He_original_ad.JPG" alt="A3_Lily_He_original_ad" style="width:100%">
@@ -279,7 +277,7 @@
             <img src="A3_Lily_He_subverted_ad.jpg" alt="A3_Lily_He_subverted_ad" style="width:100%">
           </div>
         </div>
-        <!-- The other work -->
+        <!-- Emotions-->
         <h5 style="margin-top:55px">"Emotions"</h5>
         <div class="clearfix">
           <div class="img-container">
@@ -314,7 +312,7 @@
       </div>
       <!-- My contact information -->
       <div>
-        <table style="width:90%;margin: 0px 20px 50px 20px">
+        <table style="width:90%;margin:0px 20px 50px 20px">
           <tr>
             <th>My platform</th>
             <th style="width:65%">Address</th>
@@ -346,12 +344,10 @@
         // open and close Navigation
         function w3_open() {
           document.getElementById("Navigation").style.display = "block";
-          <!--document.getElementById("myOverlay").style.display = "block";-->
         }
 
         function w3_close() {
           document.getElementById("Navigation").style.display = "none";
-          <!--document.getElementById("myOverlay").style.display = "none";-->document.getElementById("myOverlay").style.display = "block";
         }
       </script>
       <!-- Copied code ends -->
